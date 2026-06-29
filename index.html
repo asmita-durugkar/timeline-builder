@@ -2,21 +2,13 @@
 <html>
 <head>
     <title>Shakuntala Devi Timeline</title>
-    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
-    
-    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
-    
-    <script type="text/javascript">
-        // Wait for the page to load, then initialize the timeline
-        window.onload = function() {
-            // REPLACE THE URL BELOW WITH YOUR PUBLISHED GOOGLE SHEET LINK
-            var spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQoSarh8Xt6ze75Up57s7EQVX6lrx6xIIm6SIvxPV2gaR8bmwQ3qVETrY-jbIUUfZyYHB7TtRNaFOY8/pubhtml';
-            
-            window.timeline = new TL.Timeline('timeline-embed', spreadsheet_url);
-        };
-    </script>
+    <style>
+        /* This removes any weird white borders around the edges */
+        body, html { margin: 0; padding: 0; height: 100%; }
+    </style>
 </head>
 <body>      
-    <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+    <!-- This iframe pulls the working timeline directly from KnightLab's servers -->
+    <iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1-IoPRTcTKCxQ5iMHfgqULHE7UTd4Y6odSO1TTTnKJRA&font=Default&lang=en&initial_zoom=2&height=600" width="100%" height="600" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
 </body>
 </html>
